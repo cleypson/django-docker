@@ -37,7 +37,7 @@ Segundo passo: alterar o manage.py para excutar o ptvsd ao executar o runserver:
 ```
 Cole esse trecho de código logo após 'DJANGO_SETTINGS_MODULE' antes do 'try'.
 
-Terceiro passo: expor a porta 3000 aberta pelo ptvsd na sua máquina local:
+Terceiro passo: expor a porta 3000 aberta pelo ptvsd na sua máquina local, basta adicionar ao ports do serviço web no docker-compose.yml a porta 3000 junto com a porta do runserver:
 
 ```
 ...
