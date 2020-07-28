@@ -19,7 +19,7 @@ services:
     volumes:
       - './src:/app/'
     ports:
-      - '3000:3000'
+      - '3000:3000' # expoe no localhost a porta 3000 aberta pelo ptvsd.
       - '8100:8100'
     depends_on:
       - db
