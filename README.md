@@ -65,5 +65,6 @@ Quarto passo (e último uffa): Adicionar no launch.json a configuração para ex
         "host": "127.0.0.1", // localhost
     }
 ...
+```
 
 Agora vai aparecer "Python: Django | Docker" na lista para ser executado, basta clicar no run e marcar os breakpoints e seja feliz com seu bug.
