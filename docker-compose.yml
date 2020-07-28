@@ -1,0 +1,25 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    build: db
+    restart: always
+    environment:
+      POSTGRES_USER: django
+      POSTGRES_PASSWORD: 1233
+      POSTGRES_DB: django_db
+    volumes:
+      - './db/data:/var/lib/postgresql/data'
+    ports:
+      - '5433:5432'
+  web:
+    build: src
+    image: python
+    command: 'python manage.py runserver 0.0.0.0:8100'
+    volumes:
+      - './src:/app/'
+    ports:
+      - '3000:3000'
+      - '8100:8100'
+    depends_on:
+      - db
