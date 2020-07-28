@@ -19,7 +19,7 @@ ptvsd==4.3.2
 ```
 no requirements.txt e executar o rebuild no container para instalar automaticamente o ptvsd.
 
-Segundo passo: alterar o manage.py para excutar o ptvsd ao executar o runserver.
+Segundo passo: alterar o manage.py para excutar o ptvsd ao executar o runserver:
 
 ```
 ...
@@ -37,7 +37,7 @@ Segundo passo: alterar o manage.py para excutar o ptvsd ao executar o runserver.
 ```
 Cole esse trecho de código logo após 'DJANGO_SETTINGS_MODULE' antes do 'try'.
 
-Terceiro passo: expor a porta 3000 aberta pelo ptvsd na sua máquina local
+Terceiro passo: expor a porta 3000 aberta pelo ptvsd na sua máquina local:
 
 ```
 ...
@@ -47,7 +47,7 @@ Terceiro passo: expor a porta 3000 aberta pelo ptvsd na sua máquina local
 ...
 ```
 
-Quarto passo (e último uffa): Adicionar no launch.json a configuração para executar o debug, basta clicar na engranagem na aba Run do VSCode e colar esse trecho de código dentro do "configurations".
+Quarto passo (e último uffa): Adicionar no launch.json a configuração para executar o debug, basta clicar na engranagem na aba Run do VSCode e colar esse trecho de código dentro do "configurations":
 
 ```
 ...        
