@@ -8,7 +8,7 @@ build:
 
 run:
 	docker-compose up -d db
-	sleep 10
+	sleep 5
 	docker-compose up web
 
 stop:
